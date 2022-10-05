@@ -48,6 +48,12 @@
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
       </ul>
+      <ul>
+        <li><a href="#building-for-simulator">Building for simulator</a></li>
+      </ul>
+      <ul>
+        <li><a href="#building-for-distrubution">Building for distrubution</a></li>
+      </ul>
     </li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
