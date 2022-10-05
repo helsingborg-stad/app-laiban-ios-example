@@ -27,10 +27,6 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/helsingborg-stad/app-laiban-ios-example">
-    <img src="docs/images/hbg-github-logo-combo.png" alt="Logo" width="300">
-  </a>
-
   <h3 align="center">Laiban</h3>
 
   <p align="center">
@@ -39,8 +35,6 @@
     <a href="https://github.com/helsingborg-stad/app-laiban-ios-example/issues">Report Bug</a>
   </p>
 </div>
-
-
 
 <!-- TABLE OF CONTENTS -->
 <details>
