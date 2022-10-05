@@ -74,15 +74,20 @@ The goal of this project is to showcase and demo the use of SPM packages in proj
 
 ### Prerequisites
 
-* Apple developer account for distribution
 * Xcode 14
 * iOS 14
+* Apple developer program for distribution
+* iPad
 
 ### Building for simulator
 
 To run the app; Simply clone the repository, open `LaibanExample.xcodeproj` in Xcode and run.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Building for distrubution
+
+Information on how to distribute and submitting an app to App Store can be found at the [Apple developer website](https://developer.apple.com/).
 
 <!-- CONTRIBUTING -->
 ## Contributing
