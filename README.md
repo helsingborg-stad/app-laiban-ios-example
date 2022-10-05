@@ -30,7 +30,7 @@
   <h3 align="center">Laiban</h3>
 
   <p align="center">
-    <a href="https://laiban.helsingborg.se/laibans-funktioner/#what-to-do">Screenshots & information</a>
+    <a href="https://laiban.helsingborg.se/laibans-funktioner/">Screenshots & information</a>
     ·
     <a href="https://github.com/helsingborg-stad/app-laiban-ios-example/issues">Report Bug</a>
   </p>
