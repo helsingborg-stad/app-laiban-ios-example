@@ -94,7 +94,7 @@ To run the app; Simply clone the repository, open `LaibanExample.xcodeproj` in X
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the MIT License. See `LICENSE` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
