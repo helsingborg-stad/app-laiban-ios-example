@@ -1,10 +1,3 @@
----
-title: "README"
-date: 2022-05-27
-draft: false
-layout: default
----
-
 <!-- HEADS UP! To avoid retyping too much info. Do a search and replace with your text editor for the following:
 repo_name, project_name -->
 
