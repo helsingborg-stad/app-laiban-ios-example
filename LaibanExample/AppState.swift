@@ -70,6 +70,7 @@ class AppState : ObservableObject {
             languageService,
             returnToHomeScreenService,
             movementService
+            recreationService
         ]
     }
     private var cancellables = Set<AnyCancellable>()
