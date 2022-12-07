@@ -59,8 +59,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/helsingborg-stad/spm-ms-cognitive-services",
       "state" : {
-        "revision" : "a4b2d17b9539d54166080ea4362d9da5570542c8",
-        "version" : "1.0.0"
+        "revision" : "ed3013aaa430e72528060224d7aa23bf65a24ca8",
+        "version" : "1.0.1"
       }
     },
     {
