@@ -13,5 +13,7 @@ var pronunciationAdjustments: [Locale: [MSPronunciation]] = [
     Locale(identifier: "sv_SE"): [
         .init(string: "ateljén", replacement: "ateljeen"),
         .init(string: "Ateljén", replacement: "Ateljeen"),
+        .init(string: "Pedagogen", replacement: "pedagog-en"),
+        .init(string: "pedagogen", replacement: "Pedagog-en")
     ]
 ]
