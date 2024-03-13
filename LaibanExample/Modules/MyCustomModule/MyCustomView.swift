@@ -1,26 +1,23 @@
-//
-//  MyCustomView.swift
-//  LaibanExample
-//
-//  Created by Tomas Green on 2022-09-19.
-//
-
 import SwiftUI
 import Laiban
-import Assistant
 
-struct MyCustomView : View {
-    @ObservedObject var service: MyCustomService
-    @EnvironmentObject var viewState:LBViewState
-    @EnvironmentObject var assistant:Assistant
+struct MyCustomView: View {
     @Environment(\.fullscreenContainerProperties) var properties
-    @Environment(\.locale) var locale
+
     var body: some View {
-        Text("Detta är min Laiban-modul")
-            .frame(maxWidth:.infinity,alignment: .leading)
-            .padding(properties.spacing[.m])
-            .font(properties.font, ofSize: .n)
-            .primaryContainerBackground()
-            .frame(maxHeight:.infinity,alignment: .bottom)
+        VStack {
+            Text("HEPP")
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .padding(properties.spacing[.m])
+        .primaryContainerBackground()
+    }
+}
+
+struct MyCustomView_Preview: PreviewProvider {
+    static var previews: some View {
+        LBFullscreenContainer { _ in
+            MyCustomView()
+        }.attachPreviewEnvironmentObjects()
     }
 }

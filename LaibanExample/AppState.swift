@@ -30,6 +30,7 @@ import STT
 import PublicCalendar
 import Weather
 
+@available(iOS 15.0, *)
 class AppState : ObservableObject {
     var singalongService = SingalongService()
     var recreationService = RecreationService()
@@ -50,12 +51,16 @@ class AppState : ObservableObject {
     var returnToHomeScreenService = ReturnToHomeScreenService()
     var movementService = MovementService()
     var appAnalytics = AppAnalytics()
+    var imageGeneratorService = ImageGeneratorServiceFactory.GetService()
+    
+    var dashboardItemVisibilityService = DashboardItemVisibilityService()
     
     // App specific services
     var myCustomService = MyCustomService()
     
     var adminServices:[LBAdminService] {
         return [
+            dashboardItemVisibilityService,
             instagramService,
             noticeboardService,
             memoryGameService,
@@ -70,7 +75,8 @@ class AppState : ObservableObject {
             languageService,
             returnToHomeScreenService,
             movementService,
-            recreationService
+            recreationService,
+            imageGeneratorService.admin
         ]
     }
     private var cancellables = Set<AnyCancellable>()
@@ -89,6 +95,7 @@ class AppState : ObservableObject {
     @Published private(set) var setupCompleted = false
     
     var willTranslateTimer:Timer? = nil
+    
     init() {
         self.settings = LaibanSettings(defaultsFromFile: Bundle.main.url(forResource: "Config", withExtension: "plist"), managedConfigEnabled: true)
         self.msTTS = MSTTS(config: nil, audioSwitchboard: switchboard)
@@ -135,6 +142,19 @@ class AppState : ObservableObject {
         
         updateInstagramSettings()
         
+        dashboardItemVisibilityService.managedServices = dashboardLayout.flatMap({ $0 })
+        dashboardItemVisibilityService.dashboardItemView = { data in
+            HStack {
+                DashboardItemIcon(appState: self, item: data.viewIdentity)
+                .frame(width: 50, height: 50, alignment: .center)
+                if data is LBAdminService {
+                    Text((data as! any LBAdminService).id)
+                } else {
+                    Text(data.viewIdentity.id)
+                }
+            }
+        }
+        
         func checkServices() -> Bool {
             for service in adminServices {
                 guard let s = service as? LBService else {
@@ -153,6 +173,43 @@ class AppState : ObservableObject {
             }
         }
     }
+    
+    struct DashboardItemIcon: View {
+        public var appState: AppState
+        public var item: LBViewIdentity?
+        
+        var body: some View {
+            switch item {
+            case LBViewIdentity.time:            TimeHomeViewIcon()
+            case LBViewIdentity.activities:      ActivitiesHomeViewIcon()
+            case LBViewIdentity.outdoors:        OutdoorsHomeViewIcon(service: appState.outdoorsService)
+            case LBViewIdentity.food:            FoodHomeViewIcon()
+            case LBViewIdentity.foodwaste:       FoodWasteHomeViewIcon()
+            case LBViewIdentity.singalong:       SingalongHomeViewIcon()
+            case LBViewIdentity.calendar:        CalendarHomeViewIcon()
+            case LBViewIdentity.instagram:       InstagramHomeViewIcon()
+            case LBViewIdentity.recreation:      RecreationHomeViewIcon()
+            case LBViewIdentity.memory:          MemoryHomeViewIcon()
+            case LBViewIdentity.trashmonster:    TrashMonstersHomeViewIcon()
+            case LBViewIdentity.noticeboard:     NoticeboardHomeViewIcon()
+            case LBViewIdentity.undpinfo:        UNDPHomeViewIcon()
+            case LBViewIdentity.imageGenerator:  ImageGeneratorViewIcon()
+//                case LBViewIdentity.movement:        MovementHomeViewIcon()       // Disabled and waiting for feedback from test users.
+//                case LBViewIdentity.myCustomService: MyCustomViewIcon()
+            default: EmptyView()
+            }
+        }
+    }
+    
+    var dashboardLayout:[[LBDashboardItem]] {
+        return [
+            [timeService,         calendarService,  singalongService,     foodService,          foodWasteService                  ],
+            [outdoorsService,     movementService,  recreationService,    activityService,      instagramService                  ],
+            [memoryGameService,   undpService,      trashMonsterService,  noticeboardService,   imageGeneratorService.dashboard   ],
+        ]
+    }
+    
+    
     func completeInitialization(){
         // Setting upp assistant properties based on settings stored in language service
         assistant.ttsRate = languageService.data.ttsRate
@@ -219,6 +276,8 @@ class AppState : ObservableObject {
             self.translate(items.map { $0.title })
         }.store(in: &cancellables)
         
+        imageGeneratorService.service.initStartupCheck()
+        
         self.translateAll()
         self.setupCompleted = true
     }
@@ -261,6 +320,7 @@ class AppState : ObservableObject {
     }
 }
 
+@available(iOS 15.0, *)
 extension AppState : NoticeboardContentProvider, TimeViewContentProvider, CalendarContentProvider {
     func otherClockItemsPublisher() -> AnyPublisher<[Laiban.ClockItem]?, Never> {
         activityService.$data.map { arr in

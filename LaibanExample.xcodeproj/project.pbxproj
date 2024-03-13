@@ -11,7 +11,6 @@
 		0E77B52728D4B49500C3044C /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E77B52628D4B49500C3044C /* RootView.swift */; };
 		0E77B52928D4B49800C3044C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E77B52828D4B49800C3044C /* Assets.xcassets */; };
 		0E77B52C28D4B49800C3044C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E77B52B28D4B49800C3044C /* Preview Assets.xcassets */; };
-		0E77B53428D4B4E500C3044C /* Laiban in Frameworks */ = {isa = PBXBuildFile; productRef = 0E77B53328D4B4E500C3044C /* Laiban */; };
 		0E77B53728D4B53E00C3044C /* AppSettings in Frameworks */ = {isa = PBXBuildFile; productRef = 0E77B53628D4B53E00C3044C /* AppSettings */; };
 		0E77B53928D4B53E00C3044C /* Assistant in Frameworks */ = {isa = PBXBuildFile; productRef = 0E77B53828D4B53E00C3044C /* Assistant */; };
 		0E77B53B28D4B53E00C3044C /* AudioSwitchboard in Frameworks */ = {isa = PBXBuildFile; productRef = 0E77B53A28D4B53E00C3044C /* AudioSwitchboard */; };
@@ -29,6 +28,14 @@
 		0E77B55928D85D3000C3044C /* MyCustomService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E77B55828D85D3000C3044C /* MyCustomService.swift */; };
 		0E77B55B28D85D3C00C3044C /* MyCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E77B55A28D85D3C00C3044C /* MyCustomView.swift */; };
 		0E77B55D28D85D4D00C3044C /* MyCustomViewIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E77B55C28D85D4D00C3044C /* MyCustomViewIcon.swift */; };
+		7E1968CB2B975D1600859727 /* Laiban in Frameworks */ = {isa = PBXBuildFile; productRef = 7E1968CA2B975D1600859727 /* Laiban */; };
+		7E1968CD2B975D1600859727 /* SharedActivities in Frameworks */ = {isa = PBXBuildFile; productRef = 7E1968CC2B975D1600859727 /* SharedActivities */; };
+		7E1968CF2B975D1600859727 /* TextAutoCorrector in Frameworks */ = {isa = PBXBuildFile; productRef = 7E1968CE2B975D1600859727 /* TextAutoCorrector */; };
+		7E1968D12B975D1600859727 /* UDPipe in Frameworks */ = {isa = PBXBuildFile; productRef = 7E1968D02B975D1600859727 /* UDPipe */; };
+		7E536A7A2B976D2C001F8054 /* Laiban in Frameworks */ = {isa = PBXBuildFile; productRef = 7E536A792B976D2C001F8054 /* Laiban */; };
+		7E536A7C2B976D2C001F8054 /* SharedActivities in Frameworks */ = {isa = PBXBuildFile; productRef = 7E536A7B2B976D2C001F8054 /* SharedActivities */; };
+		7E536A7E2B976D2C001F8054 /* TextAutoCorrector in Frameworks */ = {isa = PBXBuildFile; productRef = 7E536A7D2B976D2C001F8054 /* TextAutoCorrector */; };
+		7E536A802B976D2C001F8054 /* UDPipe in Frameworks */ = {isa = PBXBuildFile; productRef = 7E536A7F2B976D2C001F8054 /* UDPipe */; };
 		DECB6113292234BC00E92078 /* AppAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECB6112292234BC00E92078 /* AppAnalytics.swift */; };
 		F657A01A2940832D0015B3DF /* PronunciationAdjustments.swift in Sources */ = {isa = PBXBuildFile; fileRef = F657A0192940832D0015B3DF /* PronunciationAdjustments.swift */; };
 /* End PBXBuildFile section */
@@ -45,6 +52,7 @@
 		0E77B55828D85D3000C3044C /* MyCustomService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomService.swift; sourceTree = "<group>"; };
 		0E77B55A28D85D3C00C3044C /* MyCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomView.swift; sourceTree = "<group>"; };
 		0E77B55C28D85D4D00C3044C /* MyCustomViewIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomViewIcon.swift; sourceTree = "<group>"; };
+		7EBBA7732AFE30AC006203FB /* LaibanExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LaibanExample.entitlements; sourceTree = "<group>"; };
 		DECB6112292234BC00E92078 /* AppAnalytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAnalytics.swift; sourceTree = "<group>"; };
 		F657A0192940832D0015B3DF /* PronunciationAdjustments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PronunciationAdjustments.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -54,17 +62,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E1968CD2B975D1600859727 /* SharedActivities in Frameworks */,
+				7E1968CB2B975D1600859727 /* Laiban in Frameworks */,
 				0E77B55128D4F16700C3044C /* Shout in Frameworks */,
 				0E77B54528D4B53E00C3044C /* TTS in Frameworks */,
 				0E77B53D28D4B53E00C3044C /* Dragoman in Frameworks */,
+				7E536A802B976D2C001F8054 /* UDPipe in Frameworks */,
 				0E77B54128D4B53E00C3044C /* PublicCalendar in Frameworks */,
+				7E536A7A2B976D2C001F8054 /* Laiban in Frameworks */,
+				7E1968CF2B975D1600859727 /* TextAutoCorrector in Frameworks */,
+				7E536A7C2B976D2C001F8054 /* SharedActivities in Frameworks */,
 				0E77B53B28D4B53E00C3044C /* AudioSwitchboard in Frameworks */,
-				0E77B53428D4B4E500C3044C /* Laiban in Frameworks */,
 				0E77B53F28D4B53E00C3044C /* Meals in Frameworks */,
 				0E77B54928D4B53E00C3044C /* Weather in Frameworks */,
+				7E536A7E2B976D2C001F8054 /* TextAutoCorrector in Frameworks */,
 				0E77B55328D4F1D700C3044C /* MSCognitiveServices in Frameworks */,
 				0E77B53728D4B53E00C3044C /* AppSettings in Frameworks */,
 				0E77B54328D4B53E00C3044C /* STT in Frameworks */,
+				7E1968D12B975D1600859727 /* UDPipe in Frameworks */,
 				0E77B53928D4B53E00C3044C /* Assistant in Frameworks */,
 				0E77B54728D4B53E00C3044C /* TextTranslator in Frameworks */,
 			);
@@ -93,6 +108,7 @@
 		0E77B52328D4B49500C3044C /* LaibanExample */ = {
 			isa = PBXGroup;
 			children = (
+				7EBBA7732AFE30AC006203FB /* LaibanExample.entitlements */,
 				F657A0192940832D0015B3DF /* PronunciationAdjustments.swift */,
 				0E77B55528D855E700C3044C /* Info.plist */,
 				0E77B52428D4B49500C3044C /* LaibanExampleApp.swift */,
@@ -158,7 +174,6 @@
 			);
 			name = LaibanExample;
 			packageProductDependencies = (
-				0E77B53328D4B4E500C3044C /* Laiban */,
 				0E77B53628D4B53E00C3044C /* AppSettings */,
 				0E77B53828D4B53E00C3044C /* Assistant */,
 				0E77B53A28D4B53E00C3044C /* AudioSwitchboard */,
@@ -171,6 +186,14 @@
 				0E77B54828D4B53E00C3044C /* Weather */,
 				0E77B55028D4F16700C3044C /* Shout */,
 				0E77B55228D4F1D700C3044C /* MSCognitiveServices */,
+				7E1968CA2B975D1600859727 /* Laiban */,
+				7E1968CC2B975D1600859727 /* SharedActivities */,
+				7E1968CE2B975D1600859727 /* TextAutoCorrector */,
+				7E1968D02B975D1600859727 /* UDPipe */,
+				7E536A792B976D2C001F8054 /* Laiban */,
+				7E536A7B2B976D2C001F8054 /* SharedActivities */,
+				7E536A7D2B976D2C001F8054 /* TextAutoCorrector */,
+				7E536A7F2B976D2C001F8054 /* UDPipe */,
 			);
 			productName = LaibanExample;
 			productReference = 0E77B52128D4B49500C3044C /* LaibanExample.app */;
@@ -184,7 +207,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1400;
-				LastUpgradeCheck = 1400;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					0E77B52028D4B49500C3044C = {
 						CreatedOnToolsVersion = 14.0;
@@ -202,9 +225,9 @@
 			);
 			mainGroup = 0E77B51828D4B49500C3044C;
 			packageReferences = (
-				0E77B53228D4B4E500C3044C /* XCRemoteSwiftPackageReference "spm-laiban" */,
 				0E77B53528D4B53E00C3044C /* XCRemoteSwiftPackageReference "spm-daisy" */,
 				0E77B54C28D4EF8900C3044C /* XCRemoteSwiftPackageReference "spm-ms-cognitive-services" */,
+				7E536A782B976D2C001F8054 /* XCRemoteSwiftPackageReference "spm-laiban" */,
 			);
 			productRefGroup = 0E77B52228D4B49500C3044C /* Products */;
 			projectDirPath = "";
@@ -273,6 +296,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -305,6 +329,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -319,7 +344,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -333,6 +358,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -365,6 +391,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -373,7 +400,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -388,18 +415,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LaibanExample/LaibanExample.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CONFIG = Config;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LaibanExample/Preview Content\"";
+				DEVELOPMENT_TEAM = MHBEW6TVG2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LaibanExample/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "L[AI]ban";
+				INFOPLIST_KEY_CFBundleDisplayName = "L[AI]ban exempelapp";
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Internet access";
 				INFOPLIST_KEY_NSLocationUsageDescription = "Hämtar korrdinater";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Hämtar korrdinater";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Används för röstkommandon";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Används för att spara dina genererade bilder";
 				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Används för röstkommandon";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -408,14 +439,15 @@
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.laiban.LaibanExample;
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = se.helsingborg.laiban.LaibanExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -427,18 +459,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LaibanExample/LaibanExample.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CONFIG = Config;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LaibanExample/Preview Content\"";
+				DEVELOPMENT_TEAM = MHBEW6TVG2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LaibanExample/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "L[AI]ban";
+				INFOPLIST_KEY_CFBundleDisplayName = "L[AI]ban exempelapp";
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Internet access";
 				INFOPLIST_KEY_NSLocationUsageDescription = "Hämtar korrdinater";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Hämtar korrdinater";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Används för röstkommandon";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Används för att spara dina genererade bilder";
 				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Används för röstkommandon";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -447,14 +483,15 @@
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.laiban.LaibanExample;
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = se.helsingborg.laiban.LaibanExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -485,14 +522,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		0E77B53228D4B4E500C3044C /* XCRemoteSwiftPackageReference "spm-laiban" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/helsingborg-stad/spm-laiban";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
 		0E77B53528D4B53E00C3044C /* XCRemoteSwiftPackageReference "spm-daisy" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/helsingborg-stad/spm-daisy";
@@ -509,14 +538,17 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		7E536A782B976D2C001F8054 /* XCRemoteSwiftPackageReference "spm-laiban" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/helsingborg-stad/spm-laiban/";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		0E77B53328D4B4E500C3044C /* Laiban */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0E77B53228D4B4E500C3044C /* XCRemoteSwiftPackageReference "spm-laiban" */;
-			productName = Laiban;
-		};
 		0E77B53628D4B53E00C3044C /* AppSettings */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 0E77B53528D4B53E00C3044C /* XCRemoteSwiftPackageReference "spm-daisy" */;
@@ -576,6 +608,42 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0E77B54C28D4EF8900C3044C /* XCRemoteSwiftPackageReference "spm-ms-cognitive-services" */;
 			productName = MSCognitiveServices;
+		};
+		7E1968CA2B975D1600859727 /* Laiban */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Laiban;
+		};
+		7E1968CC2B975D1600859727 /* SharedActivities */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SharedActivities;
+		};
+		7E1968CE2B975D1600859727 /* TextAutoCorrector */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TextAutoCorrector;
+		};
+		7E1968D02B975D1600859727 /* UDPipe */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = UDPipe;
+		};
+		7E536A792B976D2C001F8054 /* Laiban */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E536A782B976D2C001F8054 /* XCRemoteSwiftPackageReference "spm-laiban" */;
+			productName = Laiban;
+		};
+		7E536A7B2B976D2C001F8054 /* SharedActivities */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E536A782B976D2C001F8054 /* XCRemoteSwiftPackageReference "spm-laiban" */;
+			productName = SharedActivities;
+		};
+		7E536A7D2B976D2C001F8054 /* TextAutoCorrector */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E536A782B976D2C001F8054 /* XCRemoteSwiftPackageReference "spm-laiban" */;
+			productName = TextAutoCorrector;
+		};
+		7E536A7F2B976D2C001F8054 /* UDPipe */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E536A782B976D2C001F8054 /* XCRemoteSwiftPackageReference "spm-laiban" */;
+			productName = UDPipe;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

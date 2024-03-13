@@ -19,12 +19,21 @@
       }
     },
     {
+      "identity" : "ml-stable-diffusion",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/ml-stable-diffusion.git",
+      "state" : {
+        "revision" : "081a8cb2ccc1f23222aac0f52dfe2b38b68064a5",
+        "version" : "1.1.0"
+      }
+    },
+    {
       "identity" : "sdwebimage",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/SDWebImage/SDWebImage.git",
       "state" : {
-        "revision" : "c51ba84499268ea3020e6aee9e229c0f56b9d924",
-        "version" : "5.16.0"
+        "revision" : "73b9397cfbd902f606572964055464903b1d84c6",
+        "version" : "5.19.0"
       }
     },
     {
@@ -32,8 +41,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/SDWebImage/SDWebImageSwiftUI.git",
       "state" : {
-        "revision" : "e837c37d45449fbd3b4745c10c5b5274e73edead",
-        "version" : "2.2.3"
+        "revision" : "261b6cec35686d2dc192b809ab50742b4502a73b",
+        "version" : "2.2.6"
       }
     },
     {
@@ -48,10 +57,10 @@
     {
       "identity" : "spm-laiban",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/helsingborg-stad/spm-laiban",
+      "location" : "https://github.com/helsingborg-stad/spm-laiban/",
       "state" : {
-        "revision" : "d34e4dfcf5329b4a06c9d03442920706b7c5b6a4",
-        "version" : "1.1.0"
+        "revision" : "1c825001c4b63086fcad432ed77ab9375731802d",
+        "version" : "2.0.1"
       }
     },
     {
@@ -64,12 +73,30 @@
       }
     },
     {
+      "identity" : "swift-argument-parser",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-argument-parser.git",
+      "state" : {
+        "revision" : "fddd1c00396eed152c45a46bea9f47b98e59301d",
+        "version" : "1.2.0"
+      }
+    },
+    {
       "identity" : "swiftsoup",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/scinfu/SwiftSoup.git",
       "state" : {
-        "revision" : "0e96a20ffd37a515c5c963952d4335c89bed50a6",
-        "version" : "2.6.0"
+        "revision" : "1d39e56d364cba79ce43b341f9661b534cccb18d",
+        "version" : "2.7.1"
+      }
+    },
+    {
+      "identity" : "zipfoundation",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/weichsel/ZIPFoundation.git",
+      "state" : {
+        "revision" : "b979e8b52c7ae7f3f39fa0182e738e9e7257eb78",
+        "version" : "0.9.18"
       }
     }
   ],
