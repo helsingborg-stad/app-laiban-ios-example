@@ -41,8 +41,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/SDWebImage/SDWebImageSwiftUI.git",
       "state" : {
-        "revision" : "261b6cec35686d2dc192b809ab50742b4502a73b",
-        "version" : "2.2.6"
+        "revision" : "53573d6dd017e354c0e7d8f1c86b77ef1383c996",
+        "version" : "2.2.7"
       }
     },
     {
@@ -59,8 +59,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/helsingborg-stad/spm-laiban/",
       "state" : {
-        "revision" : "1c825001c4b63086fcad432ed77ab9375731802d",
-        "version" : "2.0.1"
+        "revision" : "ceffb790a8b1c8d371de45812bb53ff7fa9416aa",
+        "version" : "2.0.2"
       }
     },
     {
