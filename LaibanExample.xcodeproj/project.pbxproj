@@ -165,7 +165,6 @@
 			buildPhases = (
 				0E77B51D28D4B49500C3044C /* Sources */,
 				0E77B51E28D4B49500C3044C /* Frameworks */,
-				0E77B55428D8549D00C3044C /* ShellScript */,
 				0E77B51F28D4B49500C3044C /* Resources */,
 			);
 			buildRules = (
@@ -249,28 +248,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		0E77B55428D8549D00C3044C /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Configuration/${CONFIG}.plist",
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/${CONFIG}.plist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nCONFIGFILE=${SRCROOT}/Configuration/${CONFIG}.plist\necho \"Searching for $CONFIGFILE\"\nif [[ -f \"$CONFIGFILE\" ]]; then\n    echo \"copying config\"\n    echo \"cp $CONFIGFILE ${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/\"\n    cp \"$CONFIGFILE\" \"${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/\"\nfi\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0E77B51D28D4B49500C3044C /* Sources */ = {
@@ -448,6 +425,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = se.helsingborg.laiban.LaibanExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -492,6 +472,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = se.helsingborg.laiban.LaibanExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -527,7 +510,7 @@
 			repositoryURL = "https://github.com/helsingborg-stad/spm-daisy";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
+				minimumVersion = 1.0.8;
 			};
 		};
 		0E77B54C28D4EF8900C3044C /* XCRemoteSwiftPackageReference "spm-ms-cognitive-services" */ = {
@@ -543,7 +526,7 @@
 			repositoryURL = "https://github.com/helsingborg-stad/spm-laiban/";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
+				minimumVersion = 2.0.4;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

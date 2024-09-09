@@ -1,4 +1,5 @@
 {
+  "originHash" : "251ac716a53224bac40cc86081de5501a7bd26ed439c9a1fe308cfeb1d595022",
   "pins" : [
     {
       "identity" : "asyncpublisher",
@@ -50,8 +51,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/helsingborg-stad/spm-daisy",
       "state" : {
-        "revision" : "3addc851cfcfcebc587d47ec30ed36c9494317ae",
-        "version" : "1.0.7"
+        "revision" : "e452830d6347268ea61e261c4599cefee8a5798b",
+        "version" : "1.0.8"
       }
     },
     {
@@ -59,8 +60,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/helsingborg-stad/spm-laiban/",
       "state" : {
-        "revision" : "ceffb790a8b1c8d371de45812bb53ff7fa9416aa",
-        "version" : "2.0.2"
+        "revision" : "85c960e40555df854ccf149bb778024a6faf7b7e",
+        "version" : "2.0.4"
       }
     },
     {
@@ -100,5 +101,5 @@
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }

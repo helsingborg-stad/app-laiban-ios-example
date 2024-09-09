@@ -2,6 +2,7 @@
 repo_name, project_name -->
 
 <!-- SHIELDS -->
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -25,6 +26,7 @@ repo_name, project_name -->
 </p>
 
 ## Table of Contents
+
 - [Table of Contents](#table-of-contents)
 - [About the project](#about-the-project)
 - [Getting started](#getting-started)
@@ -33,27 +35,48 @@ repo_name, project_name -->
 - [Acknowledgements](#acknowledgements)
 
 <!-- ABOUT THE PROJECT -->
+
 ## About the project
 
 The goal of this project is to showcase and demo the use of SPM packages in projects [spm-daisy](https://github.com/helsingborg-stad/spm-daisy) and [spm-laiban](https://github.com/helsingborg-stad/spm-laiban).
 
 <!-- GETTING STARTED -->
+
 ## Getting started
 
 ### Prerequisites
 
-* Xcode 14
-* iOS 14
-* Apple developer program for distribution
-* iPad
+- Xcode 15
+- iOS 15
+- Apple developer program for distribution
+- iPad
 
-### Building for simulator
+To run the app; Simply clone the repository, open `LaibanExample.xcodeproj` in Xcode and run. Building for production is the same as a typical iOS app. Check [Apple developer website](https://developer.apple.com/) for more information.
 
-To run the app; Simply clone the repository, open `LaibanExample.xcodeproj` in Xcode and run.
+### Azure Configuration (text-to-speech, translations)
 
-### Building for distrubution
+To enabled improved text-to-speech and/or translations of dynamic and user-supplied texts Azure API keys need to be provided.
 
-Information on how to distribute and submitting an app to App Store can be found at the [Apple developer website](https://developer.apple.com/).
+Create a `Config.plist` file and drag it into the `LaibanExample` folder in XCode (next to files like the `Info.plist`).
+
+Sample `Config.plist` contents (replace API keys and regions as needed):
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>msTranslatorKey</key>
+	<string>AZURE TRANSLATE API KEY HERE</string>
+	<key>msTranslatorRegion</key>
+	<string>swedencentral</string>
+	<key>msSpeechKey</key>
+	<string>AZURE SPEECH API KEY HERE</string>
+	<key>msSpeechRegion</key>
+	<string>northeurope</string>
+</dict>
+</plist>
+```
 
 ## Contributing
 
@@ -75,6 +98,7 @@ Distributed under the [MIT License][license-url].
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
 [contributors-shield]: https://img.shields.io/github/contributors/helsingborg-stad/app-laiban-ios-example.svg?style=flat-square
 [contributors-url]: https://github.com/helsingborg-stad/app-laiban-ios-example/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/helsingborg-stad/app-laiban-ios-example.svg?style=flat-square
