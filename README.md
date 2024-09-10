@@ -47,7 +47,7 @@ The goal of this project is to showcase and demo the use of SPM packages in proj
 ### Prerequisites
 
 - Xcode 15
-- iOS 15
+- iOS 15 (image generating with Stable Diffusion AI requires 17+)
 - Apple developer program for distribution
 - iPad
 
